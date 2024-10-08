@@ -1,0 +1,20 @@
+Create user when user not exist.
+
+#!/bin/bash
+echo "Enter the username to check"
+read uname
+
+if [ -z "$(getent passwd $uname)" ]; then
+        echo "user '$uname' does not exists."
+        echo -n "Do you want to create the user '$uname'? (y/n): "
+        read response
+        if [ "$response" == "y" ] || [ "$response" == "Y" ]; then
+                sudo su -c "useradd $uname -s /bin/bash -a -d /home/$uname"
+                echo "User '$uname' has been created."
+        else
+                echo "Failed to create user '$uname'."
+        fi
+else
+        echo "User '$uname' already exists."
+        echo "User creation aborted."
+fi
