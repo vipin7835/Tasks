@@ -1,0 +1,14 @@
+Check Whether a number entred by the user is even or odd by using linux shell scripting input will be command line argument.
+
+#!/bin/bash
+read -p "Enter a number:- " num
+
+fun(){
+        if [ $(($num%2)) -eq 0 ]; then
+                echo "$num is even."
+        else
+                echo "$num is odd."
+        fi
+}
+
+fun $num
