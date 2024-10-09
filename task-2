@@ -1,5 +1,6 @@
 Check Whether a number entred by the user is even or odd by using linux shell scripting input will be command line argument.
 
+-------------------Script----------------------
 #!/bin/bash
 read -p "Enter a number:- " num
 
@@ -12,3 +13,7 @@ fun(){
 }
 
 fun $num
+
+---------------------output----------------------
+Enter a number:- 9
+9 is odd.
