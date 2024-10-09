@@ -1,0 +1,14 @@
+Write a script to print the length of each and every string using arrays.
+------------------Script--------------------------
+#!/bin/bash
+
+arr=("Apple" "Mango" "cherry" "date")
+for str in "${arr[@]}"
+do
+        echo "String: $str, Length: ${#str}"
+done
+-----------------------output----------------------
+String: Apple, Length: 5
+String: Mango, Length: 5
+String: cherry, Length: 6
+String: date, Length: 4
