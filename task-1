@@ -1,5 +1,7 @@
 check wheter a number entred by the user is even or odd input will be user prompt.
 
+---------------Scripts---------------------
+
 #!/bin/bash
 echo "Enter a number"
 read num
@@ -8,3 +10,9 @@ if [ $((num%2)) -eq 0 ]; then
 else
         echo "$num is odd."
 fi
+
+-------------output----------------------
+
+Enter a number
+6
+6 is even.
