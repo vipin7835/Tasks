@@ -1,4 +1,4 @@
-
+check wheter a number entred by the user is even or odd input will be user prompt.
 
 #!/bin/bash
 echo "Enter a number"
