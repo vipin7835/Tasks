@@ -3,7 +3,7 @@ write shell script for  Read 'n' and generate a pattern given below
 1 2
 1 2 3
 1 2 3 4
-------------------------------------
+----------------Script--------------------
 echo "Enter the value of n: "
 read n
 
@@ -16,3 +16,11 @@ do
         echo
 
 done
+
+------------output-------------------------
+Enter the value of n:
+4
+1
+12
+123
+1234
