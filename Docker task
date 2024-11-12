@@ -1,0 +1,11 @@
+---------------Docker container hosting on port 80---------- 
+Step 1:- sudo apt update 
+step 2:- sudo apt install docker.io -y
+step 3:- sudo systemctl status docker
+step 4:- sudo chmod 666 /var/run/docker.sock
+step 5:- sudo usermod -aG docker ubuntu
+step 6:- cat /etc/group
+step 7:- docker ps -a (To check there is an existing container)
+step 8:- docker images (To check there is an existing images)
+step 9:- mkdir docker
+step 10:- vim dockerfile
