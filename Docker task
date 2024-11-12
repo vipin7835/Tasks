@@ -8,4 +8,14 @@ step 6:- cat /etc/group
 step 7:- docker ps -a (To check there is an existing container)
 step 8:- docker images (To check there is an existing images)
 step 9:- mkdir docker
-step 10:- vim dockerfile
+step 10:- cd docker
+step 11:- vim dockerfile
+          FROM nginx:latest
+          EXPOSE 80
+          CMD ["nginx", "-g", "daemon off;"]
+step 12:- docker build -t vipin .
+step 13:- docker images
+step 14:- docker run -d --name Demo -p 80:80 vipin
+step 15:- docker ps -a
+step 16:- Now we have to allow the network security changes from ec2 instances. Allow all traffic/ http 80
+step 17:- Now hit public IP of ec2 on web. your server is running
